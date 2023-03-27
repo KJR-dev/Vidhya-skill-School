@@ -1,0 +1,6 @@
+var arr=[
+    {"fname":"Jitendra","lname":"Sahoo","rno":"200510","email":"sahooj168@gmail.com","mob":7978020151,"address":"Puri"},
+    {"fname":"Chetan","lname":"Sahoo","rno":"200511","email":"chetan@gmail.com","mob":8089785743,"address":"Puri"},
+    {"fname":"Manoj","lname":"Sethi","rno":"200512","email":"smanoj@gmail.com","mob":1234123454,"address":"BBSR"},
+    {"fname":"Rashmi","lname":"Mohanty","rno":"200513","email":"mohanty@gmail.com","mob":7423767151,"address":"ctc"}
+]
