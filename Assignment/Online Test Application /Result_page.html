@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 id="result"></h1>
+    <button class="btn btn-warning m-3" id="Answer">Answer</button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        let score = 0;
+        let Test_Data = sessionStorage.getItem("Test_Data");
+        Test_Data = JSON.parse(Test_Data);
+        let Final_Result = Test_Data[0];
+        let Submit_Form = Test_Data[1];
+        // console.log(Test_Data);
+        console.log(Final_Result);
+        console.log(Submit_Form);
+
+        for (let index = 0; index < Final_Result.length; index++) {
+          score += Final_Result[index];
+        }
+        $("#result").text(score);
+        $("#Answer").click(function () {
+          window.location.href = "review.html";
+        });
+      });
+    </script>
+  </body>
+</html>

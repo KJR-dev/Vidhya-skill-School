@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header class="topheader" id="topheader">
+      <nav class="topNav" id="topNav">
+        <p id="topLeftNavText">Welcome to TODO list</p>
+      </nav>
+    </header>
+    <main class="mainContain" id="mainContain">
+      <div class="inputTaskField">
+        <input
+          type="text"
+          name="inputTask"
+          id="inputTask"
+          placeholder=" Enter your task..."
+          autofocus
+        />
+        <button type="submit" id="taskSubmitBotton" class="taskSubmitBotton" onclick="addTask()">
+          Submit
+        </button>
+      </div>
+      <div id="taskListContainer">
+        <!-- <div class="item">A</div> -->
+      </div>
+    </main>
+    <footer class="todoFooter" id="todoFooter">
+        <p class="footerText" id="footerText">Jitendrab Sahoo</p>
+    </footer>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>

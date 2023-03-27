@@ -1,0 +1,69 @@
+body{
+    background-color: white;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed;
+}
+.qPanel{
+    margin:auto;
+    width:800px;
+    vertical-align: center;
+    margin:0 auto;
+    background-color: #97d389 ;
+    border: none ;
+    border-radius : 10px ;
+    padding: 20px ;
+    height: auto ;
+    font-size: 16pt;
+}
+
+.ques{
+    font-size : 16pt;
+    font-weight: bold ;
+}
+.nxtBtn{
+    position: relative ;
+    right : 10px ;
+    float: right;
+    border:none ;
+    font-size: 18pt ;
+    background-color: #348322  ;
+    color: #ffffff ;
+    width: 80px ;
+    height: 35px ;
+}
+input[type='radio']{
+    width: 20px;
+    height: 20px;
+}
+div.line_h {
+    line-height: 1.8;
+  }
+  div.line_hsss {
+    line-height: 1.8;
+    border: 1px solid rgb(0, 255, 42);
+    padding: 10px;
+    background-color: white;
+    border-radius: 27px;
+    margin: 5px;
+  }
+  div.lftCss{
+    margin-bottom: 40px;
+  }
+  span.correct{
+    border: 1px solid green;
+    border-radius: 50%;
+    background-color: #b1d1aa;
+  }
+  span.cancel{
+    border: 1px solid rgb(177, 32, 13);
+    border-radius: 50%;
+    background-color: #d86a6a;
+  }
+  i.hi {
+     margin: 4px;
+  
+  }

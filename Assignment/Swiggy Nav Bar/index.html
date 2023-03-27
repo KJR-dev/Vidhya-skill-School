@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiggy Nav BAr</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="left_header_nav">
+          <div id="swiggyIcon"
+            ><a href="https://www.swiggy.com/" target="_blank"
+              ><img
+                src="./assets/images/swiggy_logo.webp"
+                alt="Swiggy Icon"
+                id="Swiggy_Icon" /></a
+          ></div>
+          <div id="city"><b>Dwarika</b>
+            <hr>
+          </div>
+          <div id="address">
+            <input type="text" list="Area" size="30" id="input_area" placeholder="Select Area">
+            <datalist id="Area">
+            <option value="STUDIO APARTMENT, Pocket 4, Sec"></option>
+            <option value="STUDIO APARTMENT, Pocket 4, Sec"></option>
+            <option value="STUDIO APARTMENT, Pocket 4, Sec"></option>
+            <option value="STUDIO APARTMENT, Pocket 4, Sec"></option>
+            </datalist>
+          </div>
+        </div>
+        <div id="right_header_nav">
+          <div id="search" class="common_nav_padding"><img src="./assets/images/search.webp" alt="Search_logo" height="15px" class="common_nav_margin">Search</div>
+
+          <div id="search" class="common_nav_padding"><img src="./assets/images/offer.png" alt="Offer_logo" height="15px" class="common_nav_margin">Offer</div>
+
+          <div id="search" class="common_nav_padding"><img src="./assets/images/help.jpeg" alt="Offer_logo" height="15px" class="common_nav_margin">Help</div>
+
+          <div id="search" class="common_nav_padding"><img src="./assets/images/log_in.png" alt="Offer_logo" height="15px" class="common_nav_margin">Sign In</div>
+
+          <div id="search" class="common_nav_padding"><img src="./assets/images/cart.jpeg" alt="Offer_logo" height="15px" class="common_nav_margin">Cart</div>
+        </div>
+      </nav>
+    </header>
+    <div id="offer_bar">
+      <div class="offerCard" id="offerCard_0"></div>
+      <div class="offerCard" id="offerCard_1"></div>
+      <div class="offerCard" id="offerCard_2"></div>
+      <div class="offerCard" id="offerCard_3"></div>
+      <button id="next_icon"><span class="material-symbols-outlined" id="rightIcon">
+        arrow_forward
+        </span></button>
+    </div>
+  </body>
+</html>

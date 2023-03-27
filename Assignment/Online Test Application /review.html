@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>quiz</title>
+    <link rel="shortcut icon" href="icon/icon.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+  </head>
+  <body>
+    <br /><br /><br />
+    <div class="qPanel" id="t1"></div>
+    <script
+      src="https://kit.fontawesome.com/fb203e0cb6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let QuestionData = null;
+      let AnswerData = null;
+      let i = 0;
+      let str = "";
+      console.log(QuestionData);
+
+      let Test_Data = sessionStorage.getItem("Test_Data");
+      Test_Data = JSON.parse(Test_Data);
+      let Final_Result = Test_Data[0];
+      let Submit_Form = Test_Data[1];
+      console.log(Final_Result);                                            // final result
+      console.log(Submit_Form);                                             // submit form
+
+      $(document).ready(function () {
+        AnswerData = fetch("./Answer.json") //string
+          .then(function (response) {
+            return response.json(); //object
+          })
+          .then(function (dt) {
+            AnswerData = dt;
+            fetch("./Question.json") //string
+              .then(function (response) {
+                return response.json(); //object
+              })
+              .then(function (dt) {
+                QuestionData = dt;
+                //console.log("SubmitForm : "+Submit_Form);
+                question_bind();
+              });
+          });
+      });
+
+      function question_bind() {
+         
+        for (let i = 0; i < QuestionData.length; i++) {   
+          console.log(AnswerData[i].ANSWER, Submit_Form[i],QuestionData[i].OPITION[0]);       //QuestionData.length  (question_bind) 
+          let t = "";
+          t =
+            '<div class="ques"id="question"> <h2>Q' +
+            (i + 1) +
+            '."' +
+            QuestionData[i].QUESTION +
+            '" </h2></div>';
+            for (let j = 0; j < (QuestionData[i].OPITION.length); j++) {     //QuestionData[i].OPITION.length (opition_bind)
+              t+='<div class="line_hsss" ><span id="opt'+j+'">' +QuestionData[i].OPITION[j] +'</span></div>';
+            if( QuestionData[i].OPITION[j] == Submit_Form[i]){
+              if(Submit_Form[i] == AnswerData[i].ANSWER)
+              {
+                t = t.replace('<span id="opt'+j+'">','<span id="opt'+j+'"><span class="correct"><i class="fa fa-check"aria-hidden="true"></i></span>');
+              }
+              else{
+                t = t.replace('<span id="opt'+j+'">','<span id="opt'+j+'"><span class="cancel"><i class="fa fa-xmark hi"></i></span>');
+              }
+            }
+            }
+            t+='<br><br>';
+            for (let j = 0; j < (QuestionData[i].OPITION.length); j++) {
+              if( QuestionData[i].OPITION[j] == AnswerData[i].ANSWER)
+              {
+                t = t.replace('<span id="opt'+j+'">','<span id="opt'+j+'"><span class="correct"><i class="fa fa-check"aria-hidden="true"></i></span>');
+              }
+              t=t.replace('<span class="correct"><i class="fa fa-check"aria-hidden="true"></i></span><span class="correct"><i class="fa fa-check"aria-hidden="true"></i></span>','<span class="correct"><i class="fa fa-check"aria-hidden="true"></i></span>');
+            }
+          str += t;
+        }
+        document.getElementById("t1").innerHTML = str;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+#topheader{
+    width: 90%;
+    background-color: aqua;
+    margin: auto;
+    margin-top: 3%;
+}
+#topLeftNavText{
+    font-size: 40px;
+    text-align: center;
+    margin: 0px;
+}
+#mainContain{
+    width:90%;
+    margin: auto;
+    background-color: blanchedalmond;
+}
+#inputTask{
+    margin: 2%;
+    height: 40px;
+    width: 75%;
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+}
+#taskSubmitBotton{
+    margin: 2%;
+    height: 50px;
+    width: 15%;
+    background-color: greenyellow;
+    font-size: larger;
+    font-weight: 600;
+}
+#taskListContainer{
+    /*min-height: 50px;*/
+    max-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: scroll;
+}
+.item{
+    background-color: yellow;
+    margin: 4% 4%;
+    padding: 4%;
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+}
+#todoFooter{
+    width: 90%;
+    background-color: aqua;
+    margin: auto;
+    margin-block-start: 0px;
+}
+#footerText{
+    text-align: center;
+    font-size: xx-large;
+    padding: 1%;
+}
