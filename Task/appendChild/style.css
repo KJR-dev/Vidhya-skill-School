@@ -1,0 +1,25 @@
+#container{
+    flex-wrap: wrap;
+    width: 90%;
+    background-color: aqua;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding:55px 25px;
+}
+.innerContainer{
+    display:flex;
+    height: 200px;
+    width: 23%;
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
