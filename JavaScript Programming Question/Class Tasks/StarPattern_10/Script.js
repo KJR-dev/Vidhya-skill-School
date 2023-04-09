@@ -7,7 +7,6 @@
 // *   *
 // ******
 
-
 // Input must be a positive number.
 // Input number is less than equal to zero then output should be "please enter a positive odd number"
 // Input is String and Not a Number(NaN) then output should be "please enter a valid odd number"
@@ -34,11 +33,7 @@ function printStarPattern(number) {
   let stars = "";
   for (let index = 0; index <= number; index++) {
     for (let index2 = 0; index2 <= index; index2++) {
-      if (
-        index == number ||
-        index - index2 === 0 ||
-        index === index - index2
-      ) {
+      if (index == number || index - index2 === 0 || index === index - index2) {
         stars += "*";
       } else {
         stars += " ";
