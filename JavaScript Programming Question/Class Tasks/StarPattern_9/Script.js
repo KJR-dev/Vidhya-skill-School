@@ -1,3 +1,12 @@
+// Print this star pattern
+
+
+//     *
+//    **
+//   ***
+//  ****
+// *****  
+
 // Input must be a positive number.
 // Input number is less than equal to zero then output should be "please enter a positive odd number"
 // Input is String and Not a Number(NaN) then output should be "please enter a valid odd number"
