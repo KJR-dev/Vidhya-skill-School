@@ -1,0 +1,8 @@
+Print this star pattern
+
+
+*****
+*   *
+*   *
+*   *
+*****
