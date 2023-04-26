@@ -1,3 +1,5 @@
+//find the  palindrome and largest lenght from the given string.
+
 function palindromeString(input) {
   if (typeof input !== "string") {
     console.log("please enter a string");
@@ -37,7 +39,6 @@ function isPalindrome(inputString) {
     return true;
   }
 }
-
 
 let string = "Good Morning, I am Jitendra Sahoo it is my racecar.";
 palindromeString(string);
