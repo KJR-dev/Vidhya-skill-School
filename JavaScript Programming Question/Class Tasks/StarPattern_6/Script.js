@@ -44,7 +44,7 @@ function printStarPattern(number) {
   return stars;
 }
 console.log("testing 1");
-console.log(printStarPattern(4));
+console.log(printStarPattern(5));
 
 console.log("testing 2");
 console.log(printStarPattern("4"));
