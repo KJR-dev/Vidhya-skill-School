@@ -10,7 +10,7 @@ function palindromeString(input) {
   input = input.replace(".", "");
   input = input.split(" ");
   console.log(input);
-  palindromeSubstring(input);
+  console.log(palindromeSubstring(input));
 }
 function palindromeSubstring(inputString) {
   let maxPalindromeLength = 0;
@@ -27,8 +27,12 @@ function palindromeSubstring(inputString) {
       palindromeString = palindromeString + tempArray + " ";
     }
   }
-  console.log(palindromeString.split(" "));
-  console.log(maxPalindromeLength);
+  // console.log(palindromeString.split(" "));
+  // console.log(maxPalindromeLength);
+  return {
+    matches: palindromeString.split(" "),
+    maxPalindromeLength,
+  };
 }
 function isPalindrome(inputString) {
   let isPalindrome = "";
@@ -38,6 +42,7 @@ function isPalindrome(inputString) {
   if (isPalindrome === inputString) {
     return true;
   }
+  return false;
 }
 
 let string = "Good Morning, I am Jitendra Sahoo it is my racecar.";
