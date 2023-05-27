@@ -1,1 +1,1 @@
-I am try to header and card clone of zomato webpage Here Link:- https://kjr-dev.github.io/Vidhya-Skill-School/Project/Amai/index.html
+I am try to clone of Mi.com webpage Here Link:- https://chimerical-conkies-5ff84e.netlify.app
