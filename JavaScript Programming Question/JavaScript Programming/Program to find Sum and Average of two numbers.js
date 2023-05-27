@@ -1,4 +1,4 @@
-// Program to find Sum and Average of two numbers.
+// Program to find the Sum and Average of two numbers.
 
 // step-1 call to function and takes 2 arguments i.e num1 and num2.
 // step-2 Define the function body/definations.

@@ -14,7 +14,7 @@ header {
   z-index: 1;
 }
 .top_navBar {
-  margin: 10px 32px;
+  margin: 10px 32px 4px 32px;
   display: flex;
   gap: 30px;
 }
@@ -260,37 +260,37 @@ header nav ul li a {
   text-align: center;
   font-weight: 600;
 }
-#fourthSectionDiv3ImgDetailsSpan{
+#fourthSectionDiv3ImgDetailsSpan {
   text-align: center;
-  padding-top: 20px; 
+  padding-top: 20px;
   font-size: 14px;
   font-weight: 400;
   color: rgb(255, 105, 0);
 }
-#fourthSectionDiv3ImgDiv{
+#fourthSectionDiv3ImgDiv {
   background-color: white;
   align-items: center;
 }
-#fourthSectionDiv3ImgDivimage{
+#fourthSectionDiv3ImgDivimage {
   height: 75%;
   width: 70%;
   margin: 0px 20px 0px 40px;
 }
-.fifth-section{
+.fifth-section {
   position: relative;
   right: 0;
-  margin:30px 50px;
-  height:450px;
+  margin: 30px 50px;
+  height: 450px;
   display: flex;
 }
-#fifthSectionImgDiv{
+#fifthSectionImgDiv {
   width: 50%;
   height: 100%;
   padding: 10px;
   box-sizing: border-box;
   position: relative;
 }
-#fifthSectionImgDivDetails{
+#fifthSectionImgDivDetails {
   width: 50%;
   height: 100%;
   box-sizing: border-box;
@@ -298,41 +298,41 @@ header nav ul li a {
   padding: 50px;
   line-height: 50px;
 }
-#fifthSectionImgDivimage{
+#fifthSectionImgDivimage {
   height: 100%;
-  width: 100%; 
+  width: 100%;
 }
-#fifthSectionImgDivshowPlayIcon{
+#fifthSectionImgDivshowPlayIcon {
   position: absolute;
   height: 60px;
   top: 45%;
   left: 45%;
 }
-#fifthSectionImgDivDetails p:nth-child(1){
+#fifthSectionImgDivDetails p:nth-child(1) {
   font-size: 18px;
   font-weight: 600;
   color: rgb(255, 105, 0);
 }
-#fifthSectionImgDivDetails h2{
+#fifthSectionImgDivDetails h2 {
   font-size: 32px;
   font-weight: 600;
 }
-#fifthSectionImgDivDetails h4{
+#fifthSectionImgDivDetails h4 {
   font-size: 15px;
   font-weight: 400;
 }
-#fifthSectionImgDivDetails p:nth-child(4){
+#fifthSectionImgDivDetails p:nth-child(4) {
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
 }
-#fifthSectionImgDivDetailsBottomDiv{
+#fifthSectionImgDivDetailsBottomDiv {
   display: flex;
   gap: 50px;
   justify-content: center;
-  
 }
-#fifthSectionImgDivDetailsBottomDivLeft,#fifthSectionImgDivDetailsBottomDivRight{
+#fifthSectionImgDivDetailsBottomDivLeft,
+#fifthSectionImgDivDetailsBottomDivRight {
   height: 30px;
   width: 30px;
   background-color: black;
@@ -342,7 +342,7 @@ header nav ul li a {
   margin-top: 40px;
   font-weight: 400;
 }
-.sixth-section{
+.sixth-section {
   height: 450px;
   width: 100%;
   padding: 40px;
@@ -351,105 +351,256 @@ header nav ul li a {
   right: 0;
   box-sizing: border-box;
 }
-#sixthSectionLeftDiv{
+#sixthSectionLeftDiv {
   width: 50%;
   height: 100%;
   background-color: white;
 }
 
-#sixthSectionLeftDiv h2{
-  font-size:32px;
+#sixthSectionLeftDiv h2 {
+  font-size: 32px;
   font-weight: 600;
   margin: 70px;
   text-align: center;
 }
-#sixthSectionLeftDivinnerDiv1,#sixthSectionLeftDivinnerDiv2,#sixthSectionLeftDivinnerDiv3{
+#sixthSectionLeftDivinnerDiv1,
+#sixthSectionLeftDivinnerDiv2,
+#sixthSectionLeftDivinnerDiv3 {
   width: 33%;
   height: 20%;
   display: inline;
   float: left;
 }
-#MiExtendedWarrantyIcon,#MiScreenProtectIcon,#MiCompleteProtectIcon{
-  margin: auto; 
+#MiExtendedWarrantyIcon,
+#MiScreenProtectIcon,
+#MiCompleteProtectIcon {
+  margin: auto;
   display: block;
   height: 65px;
 }
-#sixthSectionLeftDivinnerDiv1 h4,#sixthSectionLeftDivinnerDiv2 h4,#sixthSectionLeftDivinnerDiv3 h4{
+#sixthSectionLeftDivinnerDiv1 h4,
+#sixthSectionLeftDivinnerDiv2 h4,
+#sixthSectionLeftDivinnerDiv3 h4 {
   text-align: center;
   line-height: 60px;
   font-size: 16px;
   font-weight: 400;
   background-color: white;
 }
-#sixthSectionRightDiv{
+#sixthSectionRightDiv {
   width: 50%;
 }
-.sixthSectionRightTopDiv{
+.sixthSectionRightTopDiv {
   height: 49%;
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 10px;
   background-color: white;
 }
-.sixthSectionRightBottomDiv{
+.sixthSectionRightBottomDiv {
   height: 49%;
   width: 100%;
   box-sizing: border-box;
   margin-top: 10px;
   background-color: white;
 }
-.sixthSectionRightTopDiv h2,.sixthSectionRightBottomDiv h2{
+.sixthSectionRightTopDiv h2,
+.sixthSectionRightBottomDiv h2 {
   font-size: 32px;
   font-weight: 600;
   text-align: center;
   padding-top: 50px;
-  
 }
-.sixthSectionRightTopDiv p,.sixthSectionRightBottomDiv p{
+.sixthSectionRightTopDiv p,
+.sixthSectionRightBottomDiv p {
   font-size: 18px;
   font-weight: 400;
   text-align: center;
   padding-top: 20px;
 }
 footer {
-  height: 750px;
+  height: 520px;
   width: 100%;
-background-color: black;
+  background-color: black;
 }
-.footerDiv{
-  height: 620px;
+.footerDiv {
+  height: 470px;
   width: 100%;
   display: flex;
-  gap:20px;
+  gap: 60px;
   padding: 30px;
   box-sizing: border-box;
 }
-.footerDiv1,.footerDiv2,.footerDiv3,.footerDiv4{
-  width:15%;
+.footerDiv1,
+.footerDiv2,
+.footerDiv3,
+.footerDiv4 {
+  width: 16%;
   height: 100%;
   padding: 40px 0px 0px 10px;
   box-sizing: border-box;
 }
-.footerDiv5{
+.footerDiv5 {
   height: 100%;
   width: 35%;
-  background-color: rgb(244, 15, 15);
+  /* background-color: rgb(244, 15, 15); */
 }
-.footerDiv1 ul h4,.footerDiv2 ul h4,.footerDiv3 ul h4,.footerDiv4 ul h4{
+.footerDiv1 ul h4,
+.footerDiv2 ul h4,
+.footerDiv3 ul h4,
+.footerDiv4 ul h4 {
   color: white;
   line-height: 20px;
 }
-.footerDiv1 li,.footerDiv2 li,.footerDiv3 li,.footerDiv4 li{
+.footerDiv1 li,
+.footerDiv2 li,
+.footerDiv3 li,
+.footerDiv4 li {
   list-style: none;
-  line-height: 40px;
+  line-height: 30px;
 }
-.footerDiv1 li a,.footerDiv2 li a,.footerDiv3 li a,.footerDiv4 li a{
+.footerDiv1 li a,
+.footerDiv2 li a,
+.footerDiv3 li a,
+.footerDiv4 li a {
   color: gray;
   font-size: 14px;
 }
-.footerDiv1 li a:link,.footerDiv2 li a:link,.footerDiv3 li a:link,.footerDiv4 li a:link{
+.footerDiv1 li a:link,
+.footerDiv2 li a:link,
+.footerDiv3 li a:link,
+.footerDiv4 li a:link {
   text-decoration: none;
 }
-hr{
+.footerDiv1 li a:hover,
+.footerDiv2 li a:hover,
+.footerDiv3 li a:hover,
+.footerDiv4 li a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+hr {
   margin: auto;
+}
+.footerDiv5 h3 {
+  color: white;
+  margin: 36px 0px 0px 10px;
+}
+.footerDiv5 ul {
+  display: flex;
+  gap: 18px;
+  margin: 15px;
+}
+#facebookIcon,
+#TwitterIcon,
+#InstagramIcon {
+  background-color: white;
+  border-radius: 9px;
+  width: 25px;
+  height: 25px;
+}
+.footerDiv5 ul li {
+  list-style-type: none;
+}
+.footerDiv5 :nth-child(3) {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 10px;
+  color: white;
+  line-height: 40px;
+}
+.footerDiv5 #inputBox {
+  width: 90%;
+  height: 10%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 13px;
+  margin-left: 10px;
+}
+#inputBoxSearch {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  border-style: none;
+  outline: none;
+}
+#inputBoxForm {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#formSubmit {
+  height: 100%;
+  width: 10%;
+  float: right;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+#GetMiAppDiv {
+  width: 90%;
+  height: 175px;
+  margin: 10px;
+  border: 1px solid white;
+  border-radius: 13px;
+  /* background-color: red; */
+}
+#AmaiIconForQRcode {
+  width: 60px;
+  margin: 20px;
+  border-radius: 5%;
+  float: left;
+}
+#GetMiAppDiv h4 {
+  clear: right;
+  color: rgb(255, 255, 255);
+  margin: 20px 0px 0px 20px;
+}
+#GetMiAppDiv p {
+  font-size: 15px;
+  clear: right;
+  color: rgb(145, 144, 144);
+  margin-block-start: 0em;
+  margin-block-end: 1em;
+}
+#playstoreIconDiv {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#playstoreIconDiv a:link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 3px;
+}
+#playstoreIconDiv span {
+  color: white;
+}
+#playstoreIcon {
+  height: 20px;
+  margin-right: 20px;
+}
+#copyrightText {
+  font-size: 14px;
+  color: white;
+  margin-left: 37px;
+}
+#globalIcon{
+  color: white;
+  float: right;
+  text-indent: -150px;
+}
+.fa-solid{
+  color: white;
+  float: right;
+  text-indent: -55px;
 }

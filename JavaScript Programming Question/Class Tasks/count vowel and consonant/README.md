@@ -1,0 +1,1 @@
+WAP to count no of vowels and consonants in the string.

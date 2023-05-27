@@ -5,6 +5,9 @@
 // step 3: Check even number or not
 // step 4: Return boolean value
 
+ /* `checkEvenOdd` is a function that takes an input number as a parameter and checks whether
+it is an even number or an odd number. It returns a boolean value `true` if the input
+number is even and `false` if it is odd. */
 function checkEvenOdd(inputNumber) {
   if (inputNumber % 2 === 0) return true;
   else return false;

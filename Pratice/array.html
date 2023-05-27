@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #e9e9e9;
+      }
+
+      #names {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .item {
+        padding: 12px;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        border: 1px solid silver;
+        background-color: #325795;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .item-avatar {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background-color: white;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="names"></div>
+  </body>
+</html>
+
+<script>
+  const names = [
+    "VAaran",
+    "BAaren",
+    "CAarez",
+    "DAarman",
+    "EAaron",
+    "FAaron-James",
+    "GAarron",
+    "Aaryan",
+    "Aaryn",
+    "Aayan",
+    "Aazaan",
+    "Abaan",
+    "Abbas",
+    "Abdallah",
+    "Abdalroof",
+    "Abdihakim",
+    "Abdirahman",
+    "Abdisalam",
+    "Abdul",
+    "Abdul-Aziz",
+    "Abdulbasir",
+    "Abdulkadir",
+    "Abdulkarem",
+    "Abdulkhader",
+    "Abdullah",
+    "Abdul-Majeed",
+    "Abdulmalik",
+    "Abdul-Rehman",
+    "Abdur",
+    "Abdurraheem",
+    "Abdur-Rahman",
+    "Abdur-Rehmaan",
+    "Abel",
+    "Abhinav",
+    "Abhisumant",
+    "Abid",
+    "Abir",
+    "Abraham",
+    "Abu",
+    "Abubakar",
+    "Ace",
+    "Adain",
+    "Adam",
+  ];
+
+  const namesContainer = document.getElementById("names");
+
+  for (let i = 0; i < names.length; i++) {
+    const divElem = document.createElement("div");
+    divElem.className = "item";
+
+    const avatarElem = document.createElement("div");
+    avatarElem.className = "item-avatar";
+    avatarElem.innerText = names[i][0];
+
+    const titleElem = document.createElement("p");
+    titleElem.innerText = names[i];
+
+    divElem.appendChild(avatarElem);
+    divElem.appendChild(titleElem);
+
+    namesContainer.appendChild(divElem);
+  }
+</script>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #products {
+        display: flex;
+        gap: 12px;
+      }
+      .product {
+        padding: 12px;
+        background-color: blue;
+        color: white;
+        height: 200px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="products"></div>
+  </body>
+</html>
+
+<script>
+  const products = [
+    {
+      id: 1,
+      name: "iPhone 14 Pro Max",
+      price: "165000",
+      company: "Apple",
+    },
+    {
+      id: 2,
+      name: "iPhone 13 Pro Max",
+      price: "145000",
+    },
+    {
+      id: 3,
+      name: "iPhone 12 Pro Max",
+      price: "125000",
+    },
+  ];
+
+  const productContainer = document.getElementById("products");
+  for (let i = 0; i < products.length; i++) {
+    const divElem = document.createElement("div");
+    divElem.className = "product";
+
+    const idElem = document.createElement("p");
+    idElem.innerText = products[i].id;
+
+    const nameElem = document.createElement("p");
+    nameElem.innerText = products[i].name;
+
+    const priceElem = document.createElement("p");
+    priceElem.innerText = products[i].price;
+
+    const companyElem = document.createElement("p");
+    companyElem.innerText = products[i].company || "Unknown";
+
+    divElem.appendChild(idElem);
+    divElem.appendChild(nameElem);
+    divElem.appendChild(priceElem);
+    divElem.appendChild(companyElem);
+
+    productContainer.appendChild(divElem);
+  }
+</script> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #products {
+        display: flex;
+        gap: 12px;
+      }
+      .product {
+        padding: 12px;
+        background-color: blue;
+        color: white;
+        height: 200px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="products"></div>
+  </body>
+</html>
+
+<script>
+  const products = [
+    {
+      id: 1,
+      name: "iPhone 14 Pro Max",
+      price: "165000",
+      company: "Apple",
+      details: {
+        key: "Manas",
+        key2: "Ankit 2",
+      },
+    },
+    {
+      id: 2,
+      name: "iPhone 13 Pro Max",
+      price: "145000",
+      details: {
+        key: "Manas 2",
+        key2: "Ankit 2",
+      },
+    },
+    {
+      id: 3,
+      name: "iPhone 12 Pro Max",
+      price: "125000",
+      details: {
+        key: "Manas 3",
+        key2: "Ankit 2",
+      },
+    },
+  ];
+
+  const productContainer = document.getElementById("products");
+  for (let i = 0; i < products.length; i++) {
+    const divElem = document.createElement("div");
+    divElem.className = "product";
+
+    const idElem = document.createElement("p");
+    idElem.innerText = products[i].id;
+
+    const nameElem = document.createElement("p");
+    nameElem.innerText = products[i].name;
+
+    const priceElem = document.createElement("p");
+    priceElem.innerText = products[i].price;
+
+    const companyElem = document.createElement("p");
+    companyElem.innerText = products[i].company || "Unknown";
+
+    divElem.appendChild(idElem);
+    divElem.appendChild(nameElem);
+    divElem.appendChild(priceElem);
+    divElem.appendChild(companyElem);
+
+    productContainer.appendChild(divElem);
+  }
+</script> -->
